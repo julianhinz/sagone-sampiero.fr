@@ -1,82 +1,274 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sagone-sampiero.fr by julianhinz</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Carousel Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
+
   <body>
 
-      <header>
-        <h1>Sagone-sampiero.fr</h1>
-        <p></p>
-      </header>
 
-      <div id="banner">
-        <span id="logo"></span>
 
-        <a href="https://github.com/julianhinz/sagone-sampiero.fr" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/julianhinz/sagone-sampiero.fr/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/julianhinz/sagone-sampiero.fr/tarball/master" class="button">TAR</a></li>
-          </ul>
+    <!-- NAVBAR
+    ================================================== -->
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+    <div class="navbar navbar-inverse">
+		<div class="navbar-inner">
+			<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    	        <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#">Maison avec vue sur mer à Sagone</a>
+			<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+			<div class="nav-collapse collapse">
+            	<ul class="nav">
+					<li><a href="#situation">Situation</a></li>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#tarif">Tarif</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!-- /.navbar-inner -->
+	</div><!-- /.navbar -->
+    </div><!-- /.container -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/Terrasse.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
         </div>
-      </div><!-- end banner -->
+        <div class="item">
+          <img src="images/Lac Crène.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+			<div class="Flexible-container">
+			    <iframe width="425" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8"></iframe>
+			</div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <div class="container marketing">
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" src="http://placehold.it/140x140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+      <!-- START THE FEATURETTES -->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+      <hr class="featurette-divider">
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+      <div class="featurette" id="situation">
+        <img class="featurette-image pull-right" src="images/Google carrée.jpg">
+        <h2 class="featurette-heading">Situation <!--<span class="muted">It'll blow your mind.</span>--></h2>
+        <p class="lead">Proche des plages et des rivières:</p>
+        <ul>
+          <li>35 km Ajaccio</li>
+          <li>25 km du lac de Crène (vallée des deux Sorru)</li>
+		  <li>15 km de Cargèse</li>
+          <li>30 km des Calanques de Piana</li>
+        </ul>
+      </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="description">
+	        <img class="featurette-image pull-left" src="images/Entrée.jpg">
+        <h2 class="featurette-heading">Description<!--<span class="muted">See for yourself.</span>--></h2>
+        <p class="lead">Location pour 4 personnes</p>
+			<ul>
+				<li>Maison dans résidence au cœur d’un parc paysagé à 50m de la plage la plus proche.</li>
+				<li>2 pièces 55m², terrasse 40m² vue mer, jardin, parking.</li>
+				<li>Salle de séjour</li>
+				<li>Cuisine indépendante</li>
+				<li>1 chambre</li>
+				<li>Salle de bain</li>
+				<li>WC séparé</li>
+				<li>Buanderie</li>
+			</ul>
+
+			<h2>Couchage</h2>
+			<ul>
+				<li>1 lit double dans la chambre
+				<li>2 lits individuels dans le séjour
+				<li>Draps et linge de toilettes non fournis, le ménage n’est pas inclus.
+			</ul>
+			
+			<h2>Equipements</h2>
+			<ul>
+				<li>Cuisine :</li>
+				<ul>
+					<li>Vaisselle</li>
+					<li>Réfigérateur et congélateur</li>
+					<li>Cuisson au gaz</li>
+					<li>Four mixte</li>
+					<li>Bouilloire</li>
+					<li>Cafetière électrique</li>
+					<li>Grille pain</li>
+					<li>Lave vaisselle</li>
+				</ul>
+				<li>Séjour :</li>
+				<ul>
+					<li>Téléviseur</li>
+					<li>Radio, lecteur CD</li>
+				</ul>
+				<li>Buanderie :</li>
+				<ul>
+					<li>Fer et planche à repasser</li>
+					<li>Lave linge</li>
+					<li>Aspirateur</li>
+				</ul>
+				<li>Terrasse :</li>
+				<ul>
+					<li>Salon de jardin en rotin</li>
+					<li>Table et chaises</li>
+				</ul>
+			</ul>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="tarif">
+		<iframe class="featurette-image pull-right"  width="512" height="512" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        <h2 class="featurette-heading">Tarif<!--<span class="muted">Checkmate.</span>--></h2>
+        <p class="lead">Location du samedi au samedi</p>
+		<p>Basse saison – mai, juin, septembre octobre : 500€ la semaine</p>
+		<p>Haute saison – juillet et août : 800€ la semaine</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="contact">
+		<iframe class="featurette-image pull-right"  width="512" height="512" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        <h2 class="featurette-heading">Contact<!--<span class="muted">Checkmate.</span>--></h2>
+      </div>
+
+      <hr class="featurette-divider">
+
+    <div/>
+    <div/>
+
+
+      <!-- /END THE FEATURETTES -->
+	<div class="row">
+		<div class="Flexible-container">
+		    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8"></iframe>
+		</div>
+	
+	</div>
+
+      <!-- FOOTER -->
+	<div class="container">
+
       <footer>
-        <p>Project maintained by <a href="https://github.com/julianhinz">julianhinz</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2012 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
   </body>
 </html>
