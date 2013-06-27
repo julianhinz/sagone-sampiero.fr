@@ -32,127 +32,86 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="container navbar-wrapper">
-    <div class="navbar navbar-inverse">
-		<div class="navbar-inner">
-			<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-    	        <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="#">Maison avec vue sur mer à Sagone</a>
-			<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-			<div class="nav-collapse collapse">
-            	<ul class="nav">
-					<li><a href="#situation">Situation</a></li>
-					<li><a href="#description">Description</a></li>
-					<li><a href="#tarif">Tarif</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div><!-- /.navbar-inner -->
-	</div><!-- /.navbar -->
-    </div><!-- /.container -->
-
-
+	<div class="container">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    		        <span class="icon-bar"></span>
+	    	        <span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</a>
+				<!-- <a class="brand" href="#">Maison avec vue sur mer à Sagone</a> -->
+				<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+				<div class="nav-collapse collapse">
+	            	<ul class="nav">
+	            		<li><a id="brand" href="#">Maison avec vue sur mer à Sagone</a></li>
+						<li><a href="#situation">Situation</a></li>
+						<li><a href="#description">Description</a></li>
+						<li><a href="#tarif">Tarif</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!-- /.navbar-inner -->
+		</div><!-- /.navbar -->
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/Terrasse.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/Lac Crène.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-			<div class="Flexible-container">
-			    <iframe width="425" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=m&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=2.229138,5.39978&amp;z=8"></iframe>
-			</div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
-
-
+	<div class="row">
+		<div class="span12">
+			<div id="myCarousel" class="carousel slide">
+    			<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/Terrasse.jpg" alt="">
+				<!--	<div class="container">
+	            			<div class="carousel-caption">
+    							<h1>Example headline.</h1>
+								<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<a class="btn btn-large btn-primary" href="#">Sign up today</a>
+							</div>
+						</div> -->
+					</div>
+					<div class="item">
+						<img src="images/Lac Crène.jpg" alt="">
+					</div>
+					<div class="item">
+						<img src="images/Google cadré.jpg" alt="">
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div><!-- /.carousel -->
+		</div>    
+	</div>
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="row">
+		<div class="span8 center">
+			<h2>Maison dans résidence au cœur d’un parc paysagé à 50m de la plage la plus proche.</h2>
+		</div>
+	
+		<hr class="featurette-divider">
 
-    <div class="container marketing">
+		<div class="featurette" id="situation">
+        	<img class="featurette-image pull-right" src="images/Google carrée.jpg">
+			<h2 class="featurette-heading">Situation <!--<span class="muted">It'll blow your mind.</span>--></h2>
+			<p class="lead">Proche des plages et des rivières:</p>
+			<ul>
+				<li>35 km Ajaccio</li>
+				<li>25 km du lac de Crène (vallée des deux Sorru)</li>
+				<li>15 km de Cargèse</li>
+				<li>30 km des Calanques de Piana</li>
+			</ul>
+		</div>
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" src="http://placehold.it/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
+		<hr class="featurette-divider">
 
-
-      <!-- START THE FEATURETTES -->
-
-
-
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="situation">
-        <img class="featurette-image pull-right" src="images/Google carrée.jpg">
-        <h2 class="featurette-heading">Situation <!--<span class="muted">It'll blow your mind.</span>--></h2>
-        <p class="lead">Proche des plages et des rivières:</p>
-        <ul>
-          <li>35 km Ajaccio</li>
-          <li>25 km du lac de Crène (vallée des deux Sorru)</li>
-		  <li>15 km de Cargèse</li>
-          <li>30 km des Calanques de Piana</li>
-        </ul>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="description">
-	        <img class="featurette-image pull-left" src="images/Entrée.jpg">
-        <h2 class="featurette-heading">Description<!--<span class="muted">See for yourself.</span>--></h2>
-        <p class="lead">Location pour 4 personnes</p>
+		<div class="featurette" id="description">
+	    	<img class="featurette-image pull-left" src="images/Entrée.jpg">
+        	<h2 class="featurette-heading">Description<!--<span class="muted">See for yourself.</span>--></h2>
+			<p class="lead">Location pour 4 personnes</p>
 			<ul>
 				<li>Maison dans résidence au cœur d’un parc paysagé à 50m de la plage la plus proche.</li>
 				<li>2 pièces 55m², terrasse 40m² vue mer, jardin, parking.</li>
