@@ -1,187 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Maison Sagone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sagone Sampiero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Custom styles for this template -->
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic' rel='stylesheet' type='text/css'>
+    <style>		
+	a {
+		color: #666;
+	}	
+	a:hover {
+		color: #c00;
+	}
+    p {
+        margin: 25px 0 25px 0;
+    }
+	body {
+		font: 400 16px/24px "gentium book basic", "Andale Mono", "Georgia";
+		color: #333;
+		margin: 0;
+	}
+	h1, h2{
+		font: 400 16px/24px "Helvetica", "Arial", sans-serif;
+	}
+    h1{
+		letter-spacing: -1px;
+    	text-align: center;
+    	padding: 0.5em 0 0.5em 0;
+    	font-size: 200%;
+    }
+    h2{
+    	font-size: 120%;
+    }
+    footer{
+    	border-top: solid 1px #333;
+    	padding: 0.5em 0 0.5em 0;
+    }
+	.row {
+		margin: 0 0 0 0;
+	 	padding: 1.5em 25% 1.5em 25%;
+	}
+	.row img{
+		width: 100%;
+	 	padding: 0.5em 0 0.5em 0;
+	}
+	.image {
+		margin: 0 0 0 0;
+	 	padding: 0em 0% 0em 0%;
+	 	min-height: 350px;
+	 	background-position: center;
+	 	background-repeat: no-repeat;
+	 	background-size: cover;
+	}
+	@media (max-width: 999px) {
+		.row {
+			padding: 1em 15% 1em 15%;
+		}		
+		.image {
+			min-height: 300px;
+	 	}		
+	}
+	@media (max-width: 799px) {
+		.row {
+			padding: 1em 5% 1em 5%;
+		}		
+		.image {
+			min-height: 250px;
+	 	}		
+	}
+	@media (max-width: 479px) {
+		.quote {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+		.image {
+			min-height: 200px;
+	 	}		
+	}
+
+    .carousel-control.left {
+        background-image: none;
+        background-image: none;
+        background-repeat: repeat-x;
+    }
+    .carousel-control.right {
+        background-image: none;
+        background-image: none;
+        background-repeat: repeat-x;
+    }
+	</style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
-
+</head>
 <body>
 
-<div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-           	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-               	<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			<a class="brand" href="#">Maison Sagone</a>
-			<div class="nav-collapse collapse">
-				<ul class="nav">
-					<li><a href="#situation">Situation</a></li> <!--  class="active" -->
-					<li><a href="#description">Description</a></li>
-					<li><a href="#tarif">Tarif</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
+<div >
+	<h1>Maison avec vue sur mer à Sagone</h1>
+</div>
+
+<!--<div class="image" style="background-image: url('images/terrasse.jpg');"></div>-->
+<div class="row">
+
+	<p>Location d’un F2 de 55m² pour 4 personnes dans une résidence au cœur d’un parc paysagé à 100m des plages et des commerces.</p>
+
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/baie.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+        <div class="item">
+            <img src="images/jardin.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+        <div class="item">
+            <img src="images/entree.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel1" data-slide="prev">
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+      </a>
+      <a class="right carousel-control" href="#carousel1" data-slide="next">
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+      </a>
     </div>
+
+	<p>La maison comprend une entrée desservant la cuisine séparée, les toilettes et le séjour, une chambre, une salle de bain et une buanderie. Coté montagne, l’accès est ménagé par un jardin privatif, le séjour et la chambre donne sur une terrasse de 40m² avec vue sur le golf de Sagone.</p>
+
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/sejour.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+        <div class="item">
+            <img src="images/chambre.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+        <div class="item">
+            <img src="images/cheminee.jpg">
+          <!--<div class="carousel-caption">
+            ...
+          </div>-->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel1" data-slide="prev">
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+      </a>
+      <a class="right carousel-control" href="#carousel1" data-slide="next">
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+      </a>
+    </div>
+	
+	<p>Sagone est située à 35 km au nord d’Ajaccio, au pied de la vallée des deux Sorru qui comprend de nombreux sites de promenade et de détente (le village de Vico, le lac de Creno, les sentiers menant au GR20, les promenades en mer). A proximité, Cargèse, la cité grecque, les calanques de Piana, le site de Girolata. Les criques et plages les plus proches sont situées au pied de la résidence.</p>
+
+	<img src="images/carte.jpg">
+
+	<p><h2>TARIF</h2>
+
+	Location du samedi au samedi, linge non fourni.
+	<ul>
+		<li>Basse saison – avril, mai, juin, septembre, octobre : 400€ la semaine</li>
+		<li>Haute saison – juillet et août : 700€ la semaine</li>
+	</ul>
+
+	<p><h2>CONTACT</h2>
+	Mail: <a href="mailto:a@b.c">a@b.c</a>
+	</p>
 </div>
 
-<div id="hero">
-	<img src="images/Terrasse.jpg" alt="">
+<div class="row">
+	<footer>© 2014 <a href="#">Xavière Bouyer</a></footer>
 </div>
 
-<div class="container">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> -->
 
-    <div class="row">
-		<div class="span8 center">
-			<h2 class="featurette-heading">Maison dans résidence au cœur d’un parc paysagé à 50m de la plage la plus proche.</h2>
-		</div>
-
-		<div class="span12">
-
-			<hr class="featurette-divider" id="situation">
-
-			<div class="featurette">
-    	    	<img class="featurette-image pull-right" src="images/Google carrée.jpg">
-				<h2 class="featurette-heading">Situation <!--<span class="muted">It'll blow your mind.</span>--></h2>
-				<p class="lead">Proche des plages et des rivières:</p>
-				<ul>
-					<li>35 km Ajaccio</li>
-					<li>25 km du lac de Crène (vallée des deux Sorru)</li>
-					<li>15 km de Cargèse</li>
-					<li>30 km des Calanques de Piana</li>
-				</ul>
-			</div>
-	
-			<hr class="featurette-divider" id="description">
-
-			<div class="featurette">
-		    	<img class="featurette-image pull-left" src="images/Entrée.jpg">
-        		<h2 class="featurette-heading">Description<!--<span class="muted">See for yourself.</span>--></h2>
-				<p class="lead">Location pour 4 personnes</p>
-				<ul>
-					<li>Maison dans résidence au cœur d’un parc paysagé à 50m de la plage la plus proche.</li>
-					<li>2 pièces 55m², terrasse 40m² vue mer, jardin, parking.</li>
-					<li>Salle de séjour</li>
-					<li>Cuisine indépendante</li>
-					<li>1 chambre</li>
-					<li>Salle de bain</li>
-					<li>WC séparé</li>
-					<li>Buanderie</li>
-				</ul>
-	
-				<h2>Couchage</h2>
-				<ul>
-					<li>1 lit double dans la chambre
-					<li>2 lits individuels dans le séjour
-					<li>Draps et linge de toilettes non fournis, le ménage n’est pas inclus.
-				</ul>
-				
-				<h2>Equipements</h2>
-				<ul>
-					<li>Cuisine :</li>
-					<ul>
-						<li>Vaisselle</li>
-						<li>Réfigérateur et congélateur</li>
-						<li>Cuisson au gaz</li>
-						<li>Four mixte</li>
-						<li>Bouilloire</li>
-						<li>Cafetière électrique</li>
-						<li>Grille pain</li>
-						<li>Lave vaisselle</li>
-					</ul>
-					<li>Séjour :</li>
-					<ul>
-						<li>Téléviseur</li>
-						<li>Radio, lecteur CD</li>
-					</ul>
-					<li>Buanderie :</li>
-					<ul>
-						<li>Fer et planche à repasser</li>
-						<li>Lave linge</li>
-						<li>Aspirateur</li>
-					</ul>
-					<li>Terrasse :</li>
-					<ul>
-						<li>Salon de jardin en rotin</li>
-						<li>Table et chaises</li>
-					</ul>
-				</ul>
-      		</div>
-	
-			<hr class="featurette-divider" id="tarif">
-
-			<div class="featurette">
-				<iframe class="featurette-image pull-right"  width="512" height="512" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=42.108109,8.703103&amp;aq=&amp;sll=42.108109,8.703092&amp;sspn=0.004354,0.010546&amp;t=k&amp;ie=UTF8&amp;ll=42.108109,8.703103&amp;spn=0.004354,0.010546&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-	    	    <h2 class="featurette-heading">Tarif<!--<span class="muted">Checkmate.</span>--></h2>
-    	    	<p class="lead">Location du samedi au samedi</p>
-				<p>Basse saison – mai, juin, septembre octobre : 500€ la semaine</p>
-				<p>Haute saison – juillet et août : 800€ la semaine</p>
-    		</div>
-
-			<hr class="featurette-divider" id="contact">
-
-			<div class="featurette">
-	    	    <h2 class="featurette-heading">Contact<!--<span class="muted">Checkmate.</span>--></h2>
-	    	</div>
-
-			<hr class="featurette-divider">
-
-		<div/>
-		<footer>
-	        <p class="pull-right"><a href="#">Back to top</a></p>
-   		    <p>&copy; 2013 <a href="#">Xavière Bouyer</a></p>
-   		 </footer>
-	</div>
-</div><!-- /.container -->
-
-
-
-    <!-- Le javascript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap-transition.js"></script>
-    <script src="assets/js/bootstrap-alert.js"></script>
-    <script src="assets/js/bootstrap-modal.js"></script>
-    <script src="assets/js/bootstrap-dropdown.js"></script>
-    <script src="assets/js/bootstrap-scrollspy.js"></script>
-    <script src="assets/js/bootstrap-tab.js"></script>
-    <script src="assets/js/bootstrap-tooltip.js"></script>
-    <script src="assets/js/bootstrap-popover.js"></script>
-    <script src="assets/js/bootstrap-button.js"></script>
-    <script src="assets/js/bootstrap-collapse.js"></script>
-    <script src="assets/js/bootstrap-carousel.js"></script>
-    <script src="assets/js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-  </body>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+
+</body>
 </html>
