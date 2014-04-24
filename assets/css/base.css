@@ -19,6 +19,7 @@ h1, h2{
 h1{
 	letter-spacing: -1px;
 	font-size: 200%;
+	line-height: 100%;
 }
 #language{
 	font-size: 80%;
